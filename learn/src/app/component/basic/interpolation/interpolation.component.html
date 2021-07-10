@@ -1,0 +1,15 @@
+<!-- 
+
+	(window:resize) Is event binding.
+
+ -->
+<div class="container" (window:resize)="getHeight()">
+	<h2>Interpolation [ Sat Jul 9 ]</h2>
+	<p>2 + 2 = {{2 + 2}}</p>
+	<p>Welcome {{name}}.</p>
+	<p>Total words in your name {{name}} is {{name.length}}.</p>
+	<p>Can do your name to uppercase {{name.toUpperCase()}} or separate them {{name.split('').join(' ')}}</p>
+	<p>Or you can call a function here {{strong(greetings(name))}}. 🤔 Wonder how to make it bolder.</p>
+	<i>Can't access <strong>window</strong> object here. But can get it from ts file.</i>
+	<p>Eg. Current window height is <b>{{getHeight() || "dont know how many"}} </b>pixels.</p>
+</div>
