@@ -21,4 +21,17 @@
 	<h2>How to change routes on click?</h2>
 	<p>So to change route on click add <code>{{steps[5]}}</code> property to any html element.</p>
 	<p>Eg., <br><code>{{steps[6]}}</code> <br> <code>{{steps[7]}}</code> </p>
+
+	<h2>How to redirect in some time?</h2>
+	<ol>
+		<li>
+			Import Router inside ts file <code>import {{'\{'}} Router } from '@angular/router';</code>
+		</li>
+		<li>
+			Inject it in constructor function <code>constructor(private router: Router ) {{'\{'}} }</code>
+		</li>
+		<li>
+			Use it as follwing <code>this.router.navigate(['learn/basic/routing'])</code> <span>(Enter route of your choise in navigation)</span>
+		</li>
+	</ol>
 </div>
