@@ -12,7 +12,7 @@ export class NoPageFoundComponent implements OnInit {
 
   ngOnInit(): void {
 	  setTimeout(() => {
-		  this.router.navigate(['learn/basic/routing'])
+		  this.router.navigate(['index'])
 	  }, 1000);
   }
 
